@@ -1,6 +1,6 @@
 {
   "endpoint": "<siyuan-endpoint>",
   "token": "a3frmq4jlzz20ib6",
-  "notebook_id": "20260331000701-r42283s",
+  "notebook_id": "${SIYUAN_NOTEBOOK_ID}",
   "target_path": "/课程任务"
 }

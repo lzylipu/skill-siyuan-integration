@@ -37,7 +37,7 @@ docker run -d \
 ### 3. 配置环境变量
 
 ```bash
-export SIYUAN_ENDPOINT="http://YOUR_SERVER_IP:7000"
+export SIYUAN_ENDPOINT="${SIYUAN_ENDPOINT}"
 export SIYUAN_TOKEN="YOUR_SIYUAN_TOKEN"
 export SIYUAN_NOTEBOOK="YOUR_NOTEBOOK_ID"
 export SIYUAN_TARGET_PATH="/课程任务"
@@ -130,7 +130,7 @@ AI: 正在导入课程任务到思源笔记...
 
 ```json
 {
-  "endpoint": "http://YOUR_SERVER_IP:7000",
+  "endpoint": "${SIYUAN_ENDPOINT}",
   "token": "YOUR_SIYUAN_TOKEN",
   "notebook_id": "YOUR_NOTEBOOK_ID",
   "target_path": "/课程任务"

@@ -11,7 +11,7 @@ from pathlib import Path
 from siyuan_api_client import SiYuanClient
 
 # 配置路径
-COURSE_OUTPUT_BASE = "/vol02/1000-0-f9fae032/同步/课程-output"
+COURSE_OUTPUT_BASE = "${COURSE_OUTPUT_BASE}"
 SIYUAN_CONFIG_FILE = "<config-path>/siyuan-config.json"
 
 SUBJECTS = ["01_practice", "02_law", "03_comprehensive"]
@@ -31,7 +31,7 @@ def load_siyuan_config():
     else:
         # 创建默认配置文件
         default_config = {
-            "endpoint": "http://sy.sawebu.cn:6806",
+            "endpoint": "${SIYUAN_ENDPOINT}",
             "token": "a3frmq4jlzz20ib6",
             "notebook_id": "",
             "target_path": "/OpenClaw"

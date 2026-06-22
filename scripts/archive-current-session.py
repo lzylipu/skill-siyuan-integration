@@ -15,7 +15,7 @@ from datetime import datetime
 import requests
 
 # 配置文件路径
-SIYUAN_CONFIG_FILE = "/vol1/@apphome/trim.openclaw/data/workspace/skills/siyuan-integration/siyuan-config.json"
+SIYUAN_CONFIG_FILE = "${SIYUAN_CONFIG_FILE}"
 
 def load_siyuan_config():
     """加载思源笔记配置"""

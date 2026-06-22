@@ -1,8 +1,23 @@
 ---
 name: siyuan-integration
-description: >
-  思源笔记集成技能 - 将课程任务数据持久化到思源笔记
-  支持文档创建、内容插入、资产管理等操作
+description: "SiYuan Note integration - persist data to SiYuan Notes via API"
+version: 1.0.0
+author: lzylipu
+license: MIT
+platforms: [linux]
+prerequisites:
+  env_vars: [SIYUAN_ENDPOINT, SIYUAN_TOKEN, SIYUAN_NOTEBOOK_ID]
+  services:
+    - name: SiYuan Notes
+      url: https://b3log.org/siyuan/
+      description: "Self-hosted SiYuan Notes instance"
+metadata:
+  hermes:
+    tags: [siyuan, notes, integration, persist, archive, 思源, 笔记, 归档]
+    related_skills: [session-archiver, obsidian]
+    homepage: https://github.com/lzylipu/openclaw-skill-siyuan-integration
+    category: personal
+    skill_type: automation
 ---
 
 # SiYuan Integration - 思源笔记集成
@@ -37,7 +52,7 @@ export SIYUAN_TARGET_PATH="/课程任务"
 
 ### 2. 配置文件配置
 
-或使用 `siyuan-config.json` 配置文件：
+或使用 `siyuan-config.json.example` 配置文件：
 
 ```json
 {
@@ -163,7 +178,7 @@ siyuan-integration/
 ├── SKILL.md                              # 技能说明文档
 ├── README.md                             # 本文件
 ├── siyuan-api-client.py                  # API客户端
-├── siyuan-config.json                    # 配置文件示例
+├── siyuan-config.json.example                    # 配置文件示例
 ├── course-task-to-siyuan.py             # 课程任务导入
 ├── course-task-to-siyuan-simple.py      # 简化版导入
 ├── course-task-to-siyuan-with-original-names.py  # 使用原始文件名导入

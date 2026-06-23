@@ -15,7 +15,7 @@ metadata:
   hermes:
     tags: [siyuan, notes, integration, persist, archive, 思源, 笔记, 归档]
     related_skills: [session-archiver, obsidian]
-    homepage: https://github.com/lzylipu/openclaw-skill-siyuan-integration
+    homepage: https://github.com/lzylipu/skill-siyuan-integration
     category: personal
     skill_type: automation
 ---

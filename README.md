@@ -1,5 +1,7 @@
 # SiYuan Integration - OpenClaw Skill
 
+**[English](./README.en.md) | 中文**
+
 思源笔记集成技能，将课程任务数据持久化到思源笔记系统。
 
 ## 功能特性
